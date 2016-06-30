@@ -1,0 +1,3 @@
+target/*
+!target/chat-server.jar
+.idea
