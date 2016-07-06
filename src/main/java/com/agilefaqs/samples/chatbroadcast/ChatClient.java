@@ -7,11 +7,11 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 class ChatClient implements Runnable {
-    private Socket socket = null;
-    private Thread thread = null;
-    private DataInputStream console = null;
-    private DataOutputStream streamOut = null;
-    private SocketHandler client = null;
+    private Socket socket;
+    private Thread thread;
+    private DataInputStream console;
+    private DataOutputStream streamOut;
+    private SocketHandler client;
 
     private ChatClient(String serverName, int serverPort) {
         System.out.println("Establishing connection. Please wait ...");
